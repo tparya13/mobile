@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="conta container-fluid mb-3 justify-content-center bg-light d-flex ">
+    <div class="card crd rounded-2 bg-light ms-4 w-50 me-4 mb-5 mt-3"style="border:0;">
+        <div class="row">
+            <div class="cd card  p-3 mb-5 bg-body rounded mb-4">
+                <img src="{{data.image.url}}" class="card-img-top rounded-2 ms-2 mt-3" alt="...">
+                <div class="card-body">
+                
+      
+                
+                </div>
+            </div>
+                <div class="col2 col-5 ms-2">
+                    <h2>{{data.name}}</h2>
+                    <h3>${{data.price}}</h3>
+                    <h4 class="st mt-5" >stock: {{data.stock}}</h4>
+                    <h5>category: {{data.category}}</h5>    
+  
+                </div>
+          </div>
+    </div>
+        
+</div>
+
+{% endblock %}

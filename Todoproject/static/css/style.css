@@ -1,0 +1,40 @@
+.des{
+  text-align: center;
+  margin-left: 84px;
+  margin-right: 100px;
+  font-style: oblique;
+}
+.hed{
+    text-align: center;
+}
+.card-group{
+  width: 85vw;
+  margin-left: 178px;
+}
+.card-group img{
+  width: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.card-group a{
+  text-decoration: none;
+  color: black;
+}
+.col2{
+  margin-top: 220px;
+}
+.col1{
+  margin-top: 40px;
+}
+.cd{
+  height: 58vh;
+  width: 22vw;
+  margin-top: 130px;
+}
+.cd img{
+  width: 360px;
+}
+.conta{
+  height: 98vh
+}
