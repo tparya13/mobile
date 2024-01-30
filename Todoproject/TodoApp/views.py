@@ -7,7 +7,7 @@ def Home(request,c_slug=None):
     if c_slug!=None:
         c_page=get_object_or_404(Category,slug=c_slug)
         print(c_page)
-        product_list=Product.objects.all().filter(Category=c_page,available=True)
+        product_list=Product.objects.all().filter(category=c_page,available=True)
     else:
         product_list=Product.objects.all().filter(available=True) 
            
