@@ -9,11 +9,11 @@
 }
 .card-group{
   width: 85vw;
-  margin-left: 178px;
+  margin-left: 165px;
 }
 .card-group img{
-  width: 400px;
-  margin-left: 20px;
+  width: 300px;
+  margin-left: 6px;
   margin-right: 20px;
   margin-top: 5px;
 }
@@ -36,5 +36,8 @@
   width: 360px;
 }
 .conta{
-  height: 98vh
+  height: 91vh
+}
+.card-group .cad{
+  width: 340px;
 }
