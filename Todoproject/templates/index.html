@@ -11,7 +11,7 @@
     <div class="card-group mb-3">
       {% for i in data %}
         {% if i.available %}
-        <a href="{% url 'details' i.id %}">
+        <a href="{% url 'shop:details' i.id %}">
         <div class="cad border p-3 mb-5 bg-body rounded mb-4 me-4">
           <img src="{{i.image.url}}" height="400px" class="card-img-top rounded-4 " alt="...">
           <div class="card-body">

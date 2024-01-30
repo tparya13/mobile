@@ -1,9 +1,17 @@
-from django.shortcuts import render
-from .models import Product
+from django.shortcuts import render,get_object_or_404
+from .models import Product,Category
 # Create your views here.
-def Home(request):
-    data=Product.objects.all()
-    return render(request,'index.html',{'data':data})
+def Home(request,c_slug=None):
+    c_page=None
+    product_list=None
+    if c_slug!=None:
+        c_page=get_object_or_404(Category,slug=c_slug)
+        print(c_page)
+        product_list=Product.objects.all().filter(Category=c_page,available=True)
+    else:
+        product_list=Product.objects.all().filter(available=True) 
+           
+    return render(request,'index.html',{'data':product_list})
 
 
 
