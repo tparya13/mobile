@@ -11,7 +11,7 @@ def Home(request,c_slug=None):
     else:
         product_list=Product.objects.all().filter(available=True) 
            
-    return render(request,'index.html',{'data':product_list})
+    return render(request,'index.html',{'data':product_list,'category':c_page})
 
 
 
