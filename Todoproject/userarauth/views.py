@@ -37,10 +37,13 @@ def loginUser(req):
         print(user)
         if user is not None:
           auth.login(req,user)
+          print(user)
+          req.session['user']=str(user)
           return redirect('shop:home')
         else:
             messages.info(req, "invalidcredentials")
             return redirect('auth:login')
+
     return render(req, 'loginuser.html')
 def logoutUser(req):
     auth.logout(req)
